@@ -190,7 +190,7 @@ play_othello(PandaAI())
 class SmartAI(object):
 
     def face(self):
-        return "🐼"
+        return "🐣"
 
     def __init__(self, depth=3):
         self.depth = depth  # 探索の深さ
