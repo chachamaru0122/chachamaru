@@ -180,7 +180,7 @@ def random_place(board, stone):
 class PandaAI(object):
 
     def face(self):
-        return "🐼"
+        return "🐣"
 
     def place(self, board, stone):
         x, y = random_place(board, stone)
