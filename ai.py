@@ -14,7 +14,7 @@ board = [
 class AI(object):
 
     def face(self):
-        return "🐼"
+        return "🐣"
 
     def place(self, board, stone):
         return x, y
@@ -88,7 +88,7 @@ def random_place(board, stone):
 class PandaAI(object):
 
     def face(self):
-        return "🐼"
+        return "🐣"
 
     def place(self, board, stone):
         x, y = random_place(board, stone)
