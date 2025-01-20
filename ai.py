@@ -296,14 +296,15 @@ DANGEROUS_MOVES = {
     (5, 0): [(4, 0), (5, 1), (4, 1)],
     (5, 5): [(4, 5), (5, 4), (4, 4)],
 }
-  def prioritize_corners_first(valid_moves):
+def prioritize_corners_first(valid_moves):
     """
     隅を最優先で選択する。
     """
-    for move in valid_moves:
-        if move in CORNERS:
+    for move in valid_moves:  # 全角スペースを削除
+        if move in CORNERS:  # インデントを揃える
             return move
     return None
+
 
 
 def avoid_dangerous_moves(valid_moves, board, stone):
